@@ -13,6 +13,7 @@ const Shop = () => {
                             key={item.id}
                             id={item.id}
                             name={item.name}
+                            quantity={item.quantity}
                             price={item.price}
                             url={item.url}
                         />
