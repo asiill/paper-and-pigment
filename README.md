@@ -1,8 +1,18 @@
-# React + Vite
+# Paper and Pigment
+A template for an e-commerce website built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo
+https://asiill.github.io/paper-and-pigment/
 
-Currently, two official plugins are available:
+## Getting started
+```bash
+git clone git@github.com:asiill/paper-and-pigment.git
+cd paper-and-pigment
+npm install
+npm start
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built with
+* [React](https://react.dev/)
+* [React Router](https://reactrouter.com/en/main)
+* [Tailwind CSS](https://tailwindcss.com/)
