@@ -8,18 +8,25 @@ const Cart = () => {
     return (
         <section id="cart">
             {cartQuantity > 0 &&
-                <div className="flex flex-col gap-8">
-                    <div className="cart-items grid gap-12">
+                <div className="flex flex-col justfy-center gap-20 md:grid md:grid-cols-3">
+                    <div className="flex flex-col gap-12 w-full bg-neutral-900 md:col-span-2">
                         {items.map(item => {
                             return (
                                 <CartItemCard key={item.id} {...item}/>
                             )
                         })} 
                     </div>
-                    <div className="border border-solid border-neutral-900"></div>
-                    <div className="flex flex-col gap-2 md:flex-row md:justify-around">
-                        <div className="flex gap-2 text-2xl">
-                            <div>Total:</div>
+                    <div className="flex flex-col gap-4 w-full md:col-span-1">
+                        <div className="flex justify-between gap-2 xl">
+                            <div>Taxes</div>
+                            <div>$0</div>
+                        </div>
+                        <div className="flex justify-between gap-2 xl">
+                            <div>Shipping</div>
+                            <div>$0</div>
+                        </div>
+                        <div className="flex justify-between gap-2 text-2xl">
+                            <div>Total</div>
                             <div>
                                 ${items.reduce((total, cartItem) => {
                                     const item = itemData.find(i => i.id === cartItem.id);
@@ -28,7 +35,7 @@ const Cart = () => {
                                 }
                             </div>
                         </div>
-                        <button className="max-w-80">Checkout</button>
+                        <button className="w-full">Checkout</button>
                     </div>
                 </div>
             }

@@ -65,23 +65,3 @@ header a:hover {
 .item-list {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
-
-.item-card {
-  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
-}
-
-/* ----- ITEM PAGE ----- */
-
-.item-img-wrapper, .item-info-wrapper {
-  flex: 0 0 calc(50% - 1rem);
-}
-
-/* --- CART PAGE --- */
-
-.cart-items {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.cart-item-card {
-  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
-}

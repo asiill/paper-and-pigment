@@ -14,10 +14,10 @@ const Item = () => {
 
     return (
         <section className="flex justify-center items-center gap-4 flex-wrap md:flex-nowrap">
-            <div className="item-img-wrapper">
+            <div className="flex-[0_0_calc(50%-1rem)]">
                 <img src={item.url} className="w-9/12 min-w-28 rounded-2xl"></img>
             </div>
-            <div className="item-info-wrapper flex flex-col gap-4">
+            <div className="flex-[0_0_calc(50%-1rem)] flex flex-col gap-4">
                 <div className="flex flex-col gap-4">
                     <h1>{item.name}</h1>
                     <p>{item.description}</p>
