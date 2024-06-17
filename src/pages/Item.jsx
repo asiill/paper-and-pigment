@@ -16,7 +16,7 @@ const Item = () => {
         <section className="flex justify-center items-center gap-4 flex-wrap md:flex-nowrap">
             <figure className="flex-[0_0_calc(50%-1rem)] relative">
                 <img src={item.url} alt={item.alt} className="w-9/12 min-w-28 rounded-2xl"></img>
-                <figcaption className="absolute bottom-0 left-0 p-1 text-black text-xs">Photo by <a href={item.creditURL}>{item.credit}</a></figcaption>
+                <figcaption className="absolute bottom-0 left-0 p-1 text-black text-xs">Photo by <a href={item.creditURL} target="_blank">{item.credit}</a></figcaption>
             </figure>
             <div className="flex-[0_0_calc(50%-1rem)] flex flex-col gap-4">
                 <div className="flex flex-col gap-4">
