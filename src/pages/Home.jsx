@@ -8,7 +8,7 @@ const Home = () => {
             <div className="grid grid-cols-2">
                 <figure className="col-span-1 relative margin-0">
                     <img src={homeImg} alt="Close up of a person painting on canvas"></img>
-                    <figcaption className="absolute bottom-0 right-0 p-1 bg-neutral-300/[.07] text-xs">Photo by <a href="https://www.pexels.com/@shelaghmurphy/"></a>Shelagh Murphy</figcaption>
+                    <figcaption className="absolute bottom-0 right-0 p-1 bg-neutral-300/[.07] text-xs">Photo by <a href="https://www.pexels.com/@shelaghmurphy/">Shelagh Murphy</a></figcaption>
                 </figure>
                 <div className="flex flex-col justify-center items-center p-12 gap-8 col-span-1">
                     <div className="home-logo flex flex-col justify-center">
