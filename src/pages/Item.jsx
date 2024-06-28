@@ -13,12 +13,12 @@ const Item = () => {
     const quantity = getQuantity(item.id);
 
     return (
-        <section className="flex justify-center items-center gap-4 flex-wrap md:flex-nowrap">
-            <figure className="flex-[0_0_calc(50%-1rem)] relative">
+        <section className="flex flex-col justify-center items-center gap-4 md:flex-row">
+            <figure className="relative md:flex-[0_0_calc(50%-1rem)]">
                 <img src={item.url} alt={item.alt} className="w-9/12 min-w-28 rounded-2xl"></img>
                 <figcaption className="absolute bottom-0 left-0 p-1 text-black text-xs">Photo by <a href={item.creditURL} target="_blank">{item.credit}</a></figcaption>
             </figure>
-            <div className="flex-[0_0_calc(50%-1rem)] flex flex-col gap-4">
+            <div className="flex flex-col gap-4 md:flex-[0_0_calc(50%-1rem)]">
                 <div className="flex flex-col gap-4">
                     <h1>{item.name}</h1>
                     <p className="text-lg">{item.quantity}</p>

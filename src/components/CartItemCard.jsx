@@ -10,25 +10,21 @@ const CartItemCard = ({id, quantity}) => {
     if (item == null) return null;
 
     return (
-        <div className="shadow-[4px_8px_8px_rgba(0,0,0,0.38)] flex flex-col gap-6 justify-center items-center p-6 md:flex-row md:justify-between">
-            <div className="flex flex-col items-center gap-6 md:flex-row md:gap-20">
-                <img src={item.url} className="w-40 rounded-2xl"></img>
-                <div className="flex flex-col">
-                    <span className="text-lg">{item.name}</span>
-                    <span className="text-xs">${item.price}</span>
-                </div>
+        <div className="shadow-[4px_8px_8px_rgba(0,0,0,0.38)] flex flex-col gap-6 justify-center items-center p-6 lg:flex-row">
+            <img src={item.url} className="w-40 rounded-2xl"></img>
+            <div className="flex flex-col">
+                <span className="text-lg">{item.name}</span>
+                <span className="text-xs">${item.price}</span>
             </div>
-            <div className="flex flex-col items-center gap-6 md:flex-row md:gap-20">
-                <div className="flex flex-col gap-2">
-                    <div className="flex justify-center items-center gap-2">
-                        <button onClick={() => decreaseQuantity(item.id)}>-</button>
-                        <div>{quantity}</div>
-                        <button onClick={() => increaseQuantity(item.id)}>+</button>
-                    </div>
-                    <button onClick={() => removeItem(item.id)}>Remove</button>
+            <div className="flex flex-col gap-2">
+                <div className="flex justify-center items-center gap-2">
+                    <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                    <div>{quantity}</div>
+                    <button onClick={() => increaseQuantity(item.id)}>+</button>
                 </div>
-                <div className="text-2xl">${item.price*quantity}</div>
+                <button onClick={() => removeItem(item.id)}>Remove</button>
             </div>
+            <div className="text-2xl">${item.price*quantity}</div>
         </div>
     );
 };

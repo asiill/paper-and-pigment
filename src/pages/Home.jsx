@@ -5,12 +5,12 @@ import homeImg from "../assets/pexels-shelaghmurphy.jpg";
 const Home = () => {
     return (
         <section id="home" className="p-4">
-            <div className="grid grid-cols-2">
-                <figure className="col-span-1 relative margin-0">
+            <div className="flex flex-col md:grid md:grid-cols-2">
+                <figure className="md:col-span-1 relative margin-0">
                     <img src={homeImg} alt="Close up of a person painting on canvas"></img>
                     <figcaption className="absolute bottom-0 right-0 p-1 bg-neutral-300/[.07] text-xs">Photo by <a href="https://www.pexels.com/@shelaghmurphy/" target="_blank">Shelagh Murphy</a></figcaption>
                 </figure>
-                <div className="flex flex-col justify-center items-center p-12 gap-8 col-span-1">
+                <div className="flex flex-col justify-center items-center p-12 gap-8 md:col-span-1">
                     <div className="home-logo flex flex-col justify-center">
                         <div>
                             <span className="text-5xl italic">Paper & Pigment</span>
