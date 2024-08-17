@@ -6,7 +6,7 @@ const Shop = () => {
     //const items = itemData.map(item => <ItemCard key={item.id} {...item}/>);
     return (
         <section id="shop">
-            <div className="item-list grid gap-12 bg-neutral-900">
+            <div className="item-list grid gap-12 w-fit bg-neutral-900">
                 {itemData.map(item => {
                     return (
                         <ItemCard 

@@ -24,8 +24,7 @@ body {
 }
 
 main {
-  padding: 4rem;
-  padding-bottom: 7rem;
+  padding: 0 4rem 7rem 4rem;
 }
 
 h1 {

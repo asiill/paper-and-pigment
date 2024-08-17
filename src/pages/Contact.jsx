@@ -8,10 +8,10 @@ import pinterest from "../assets/icons/pinterest.svg";
 
 const Contact = () => {
     return (
-        <section id="contact" className="flex flex-col justify-center items-center gap-4">
+        <section id="contact" className="flex flex-col gap-4 md:items-center">
             <h1>Get in touch</h1>
 
-            <div className="flex flex-col justify-center gap-4 md:flex-row md:gap-32">
+            <div className="flex flex-col gap-4 md:flex-row md:gap-32">
                 <div className="flex flex-col gap-2">
                     <h2>Location</h2>
                     <div className="flex flex-col">
@@ -21,7 +21,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center gap-2">
                         <img src={telephone} alt="telephone receiver" className="w-5 h-5"></img>
-                        <p>5141234567</p>
+                        <p>(514) 123-4567</p>
                     </div>
                     <div className="flex items-center gap-2">
                         <img src={location} alt="location pin" className="w-5 h-5 cursor-pointer"></img>
@@ -44,13 +44,13 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col gap-2">
                 <h2>Find us on social media</h2>
-                <div className="flex flex-col justify-center items-center gap-4 md:flex-row">
-                    <a href="" target="_blank"><img src={facebook} title="facebook" className="w-5 h-5 md:w-10 md:h-10"></img></a>
-                    <a href="" target="_blank"><img src={instagram} title="instagram" className="w-5 h-5 md:w-10 md:h-10"></img></a>
-                    <a href="" target="_blank"><img src={twitter} title="X" className="w-5 h-5 md:w-10 md:h-10"></img></a>
-                    <a href="" target="_blank"><img src={pinterest} title="pinterest" className="w-5 h-5 md:w-10 md:h-10"></img></a>
+                <div className="flex flex-wrap gap-4 md:justify-center md:items-center">
+                    <a href="" target="_blank"><img src={facebook} title="facebook" className="min-w-5 h-5 md:w-10 md:h-10"></img></a>
+                    <a href="" target="_blank"><img src={instagram} title="instagram" className="min-w-5 h-5 md:w-10 md:h-10"></img></a>
+                    <a href="" target="_blank"><img src={twitter} title="X" className="min-w-5 h-5 md:w-10 md:h-10"></img></a>
+                    <a href="" target="_blank"><img src={pinterest} title="pinterest" className="min-w-5 h-5 md:w-10 md:h-10"></img></a>
                 </div>
             </div>
             

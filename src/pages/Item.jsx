@@ -13,7 +13,7 @@ const Item = () => {
     const quantity = getQuantity(item.id);
 
     return (
-        <section className="flex flex-col justify-center items-center gap-4 md:flex-row">
+        <section className="flex flex-col gap-4 md:flex-row md:items-center">
             <figure className="relative md:flex-[0_0_calc(50%-1rem)]">
                 <img src={item.url} alt={item.alt} className="w-9/12 min-w-28 rounded-2xl"></img>
                 <figcaption className="absolute bottom-0 left-0 p-1 text-black text-xs">Photo by <a href={item.creditURL} target="_blank">{item.credit}</a></figcaption>
@@ -28,13 +28,13 @@ const Item = () => {
                 <div className="flex flex-col">
                     {quantity === 0 ? (
                         <div className="add-item"><button onClick={() => increaseQuantity(item.id)}>+ add to cart</button></div>
-                    ) : <div className="flex flex-col items-start gap-4">
+                    ) : <div className="flex flex-col gap-4">
                             <div className="flex items-center gap-4">
-                                <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                                <button onClick={() => decreaseQuantity(item.id)} className="w-fit">-</button>
                                 <div><span className="quantity">{quantity}</span> in cart</div>
-                                <button onClick={() => increaseQuantity(item.id)}>+</button>
+                                <button onClick={() => increaseQuantity(item.id)} className="w-fit">+</button>
                             </div>
-                            <button onClick={() => removeItem(item.id)}>Remove</button>
+                            <button onClick={() => removeItem(item.id)} className="w-fit">Remove</button>
                         </div>
                     }
                 </div>
