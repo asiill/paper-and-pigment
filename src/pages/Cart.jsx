@@ -2,14 +2,15 @@ import React from "react";
 import CartItemCard from "../components/CartItemCard";
 import { useCart } from "../context/CartContext.jsx";
 import itemData from "../assets/itemData.jsx";
+import Button from "../components/Button.jsx";
 
 const Cart = () => {
     const { cartQuantity, items } = useCart();
     return (
-        <section id="cart">
+        <main className="p-8 pb-28">
             {cartQuantity > 0 &&
                 <div className="flex flex-col gap-20 md:grid md:grid-cols-3">
-                    <div className="flex flex-col gap-12 w-fit bg-neutral-900 md:col-span-2">
+                    <div className="flex flex-col gap-12 w-fit md:col-span-2">
                         {items.map(item => {
                             return (
                                 <CartItemCard key={item.id} {...item}/>
@@ -35,14 +36,14 @@ const Cart = () => {
                                 }
                             </div>
                         </div>
-                        <button className="w-fit">Checkout</button>
+                        <Button title="Checkout" />
                     </div>
                 </div>
             }
             {cartQuantity === 0 && 
                     <p className="text-4xl text-center">Your basket is empty</p>
             }
-        </section>
+        </main>
     )
 };
 

@@ -8,7 +8,7 @@ import pinterest from "../assets/icons/pinterest.svg";
 
 const Contact = () => {
     return (
-        <section id="contact" className="flex flex-col gap-4 md:items-center">
+        <main className="flex flex-col gap-4 p-8 pb-28 md:items-center">
             <h1>Get in touch</h1>
 
             <div className="flex flex-col gap-4 md:flex-row md:gap-32">
@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
             </div>
             
-        </section>
+        </main>
     );
 };
 

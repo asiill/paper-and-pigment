@@ -5,8 +5,8 @@ import itemData from "../assets/itemData.jsx";
 const Shop = () => {
     //const items = itemData.map(item => <ItemCard key={item.id} {...item}/>);
     return (
-        <section id="shop">
-            <div className="item-list grid gap-12 w-fit bg-neutral-900">
+        <main className="p-8 pb-28">
+            <div className="item-list grid gap-12 w-fit">
                 {itemData.map(item => {
                     return (
                         <ItemCard 
@@ -20,7 +20,7 @@ const Shop = () => {
                     );
                 })}
             </div>
-        </section>
+        </main>
     );
 };
 

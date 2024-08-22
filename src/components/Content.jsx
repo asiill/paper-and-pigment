@@ -8,7 +8,7 @@ import Contact from "../pages/Contact.jsx";
 
 const Content = () => {
     return (
-        <main>
+        <>
             <Routes>
                 <Route path="/paper-and-pigment/*" element={<Home />} />
                 <Route path="/paper-and-pigment/shop" element={<Shop />} />
@@ -16,7 +16,7 @@ const Content = () => {
                 <Route path="/paper-and-pigment/contact" element={<Contact />} />
                 <Route path="/paper-and-pigment/cart" element={<Cart />} />
             </Routes>
-        </main>
+        </>
     );
 };
 

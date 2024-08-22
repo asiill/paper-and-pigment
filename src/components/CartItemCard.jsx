@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useCart } from "../context/CartContext.jsx";
 import itemData from "../assets/itemData.jsx";
+import Button from "../components/Button.jsx";
 
 const CartItemCard = ({id, quantity}) => {
     const { removeItem, increaseQuantity, decreaseQuantity } = useCart();
@@ -18,11 +19,11 @@ const CartItemCard = ({id, quantity}) => {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <div className="flex items-center gap-2">
-                    <button onClick={() => decreaseQuantity(item.id)} className="w-fit">-</button>
+                    <Button handleClick={() => decreaseQuantity(item.id)} title="-" />
                     <div>{quantity}</div>
-                    <button onClick={() => increaseQuantity(item.id)} className="w-fit">+</button>
+                    <Button handleClick={() => increaseQuantity(item.id)} title="+" />
                 </div>
-                <button onClick={() => removeItem(item.id)} className="w-fit">Remove</button>
+                <Button handleClick={() => removeItem(item.id)} title="Remove" />
             </div>
             <div className="text-2xl">${item.price*quantity}</div>
         </div>
